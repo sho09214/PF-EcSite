@@ -5,19 +5,19 @@
     <title>商品編集ページ</title>
 </head>
 <body>
-  <h1>商品編集ページ</h1>
-  <form action="#" th:action="@{/saveProduct}" th:object="${product}" method="post">
-    <input type="hidden" th:field="*{id}">
+    <h1>商品編集ページ</h1>
+    <form action="#" th:action="@{/saveProduct}" th:object="${product}" method="post">
+      <input type="hidden" th:field="*{id}">
 
-    <label for="name">商品名</label>
-    <input type="text" th:field="*{name}" id="name">
+      <label for="name">商品名</label>
+      <input type="text" th:field="*{name}" id="name">
 
-    <label for="description">説明</label>
-    <input type="text" th:field="*{description}" id="description">
+      <label for="description">説明</label>
+      <input type="text" th:field="*{description}" id="description">
 
-    <input type="submit" value="更新する">
-  </form>
+      <input type="submit" value="更新する">
+    </form>
 
-  <a href="/">一覧ページに戻る</a>
+    <a href="/">一覧ページに戻る</a>
 </body>
 </html>

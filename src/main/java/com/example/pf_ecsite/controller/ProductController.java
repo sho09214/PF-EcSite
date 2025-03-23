@@ -22,7 +22,6 @@ public class ProductController {
     @GetMapping("/")
     public String viewHomePage(Model model) {
         List<Product> listProducts = productService.getAllProducts();
-        System.out.println("取得したデータ" + listProducts);
         model.addAttribute("listProducts", listProducts);
         return "index";
     }
